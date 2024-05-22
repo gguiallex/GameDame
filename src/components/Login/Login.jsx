@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css'
 import { useState } from 'react'
+import { HiArrowSmallRight } from "react-icons/hi2";
 
 const Login = () => {
 
@@ -17,24 +18,21 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
 
           <div className='login'>
-          <h1>Login</h1>
-            <div className='input'>
+          <h1 className='titulo'>Login</h1>
+            <div className='inputEmail'>
               <input type='email' placeholder="E-mail"
               onChange={(e) => setUsername(e.target.value)}/>
             </div>
-            <div className='input'>
+            <div className='inputSenha'>
               <input type='password' placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}/>
             </div>
-
            </div>
-            <button>→</button>
+            <button className='entrar'><HiArrowSmallRight /></button>
         </form>
 
-        <div className='redirecionamento'>
-          <a href='#' className='criar'>Criar Conta</a>
-          <a href='#' className='esqueceu'>Esqueceu a Senha?</a>
-        </div>
+        <a href='#' className='criar'>Criar Conta</a><br></br>
+        <a href='#' className='esqueceu'>Esqueceu a Senha?</a>
     </div>
   )
 }
