@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+}
+
+.image{
+    background-image: url(../../imgs/imagemPrincipal.png);
+    background-size: cover;
+    width: 1239px;
+    height: 1239px;
+    top: -140px;
+    left: 404px;
+    position: absolute;
+    z-index: 0;
+}
+
+.container{
+    margin: 0;
+    width: 550px;
+    height: 1024px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Registro{
+    position: absolute;
+    width: 390px;
+    height: 638px;
+    top: 0px;
+    left: 80px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;    
+    z-index: 3;
+    margin-bottom: 62;
+}
+
+.titulo{
+    position: relative;
+    width: 290px;
+    height: 78px;
+    top: 57px;
+    left: 45px;
+    margin-top: 0;
+    color: #4b626c;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 78.02px;
+    text-align: center;
+}
+
+.nome, .email, .CPF, .senha, .confirmarSenha{
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+}
+
+.nome{
+    top: 197px;
+}
+
+.email{
+    top: 309px;
+
+}
+
+.CPF{
+    top: 421px;
+}
+
+.senha{
+    top: 533px;
+}
+
+.confirmarSenha{
+    top: 645px;
+}
+
+.regist{
+    color: #4B626C;
+    width: 40px;
+    height: 26px;
+    top: 765px;
+    left: 435px;
+    gap: 0px;
+    opacity: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+}
+
+.regist svg {
+    width: 200%; /* Faz o ícone ocupar toda a largura do botão */
+    height: 200%; /* Faz o ícone ocupar toda a altura do botão */
+}

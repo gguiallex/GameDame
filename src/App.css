@@ -3,34 +3,5 @@
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #FBF8F4;
-    overflow-x: hidden;
-
-}
-
-.App {
-    background-color: #FBF8F4;
-    height: 100vh; 
-    width: 1024px; 
-    display: flex;
-    align-items: flex-start; 
-    justify-content: flex-start; 
-}
-
-.imagem{
-    background-image: url(./imgs/imagemPrincipal.png);
-    background-size: cover;
-    width: 1239px;
-    height: 1239px;
-    top: -140px;
-    left: 404px;
-    position: absolute;
-    overflow: hidden;
-}
