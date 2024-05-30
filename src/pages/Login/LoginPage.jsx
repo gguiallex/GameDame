@@ -2,16 +2,31 @@ import React from 'react'
 import './LoginPage.css'
 import { useState } from 'react'
 import { HiArrowSmallRight } from "react-icons/hi2";
+//import { validarEmail, validarSenha} from '../../utils/Validadores'
 
 const LoginPage = () => {
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState();
+  //const [form, setForm] = useState();
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log("Envio");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    try {
+      setLoading(true)
+      alert('funcionando')
+      setLoading(false)
+    } catch (err) {
+      alert('algo deu errado: ' + err)
     }
+    
+  }
+
+/*  const validadorInput = () => {
+    return validarEmail() && validarSenha()
+  } */
     
   return (
     <div className='container'>
@@ -32,7 +47,7 @@ const LoginPage = () => {
         </form>
 
         <a href='/register' className='criar'>Criar Conta</a><br></br>
-        <a href='#' className='esqueceu'>Esqueceu a Senha?</a>
+        <a href='/forgot-password' className='esqueceu'>Esqueceu a Senha?</a>
 
         <div className='imagem'/>
     </div>

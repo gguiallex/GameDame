@@ -4,19 +4,10 @@ import './App.css'
 
 import LoginPage from './pages/Login/LoginPage'
 import RegisterPage from './pages/Register/RegisterPage'
-import RecuperarSenhaPage from './pages/RecuperarSenha/RecuperarSenhaPage'
 import IndexPage from './pages/Index/IndexPage'
+import RecuperarSenhaPage from './pages/RecuperarSenha/RecuperarSenhaPage'
 
 function App() {
-
-  const [contas, setContas] = useState([
-    { 
-      CPF: "123.456.789-01",
-      Nome: "",
-      Email: "",
-      Senha: "Criar capacitação",
-    },
-  ])
 
   return (
 
@@ -24,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LoginPage/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
-          <Route path='#' element={<RecuperarSenhaPage/>}/>
+          <Route path='/forgot-Password' element={<RecuperarSenhaPage/>}/>
           <Route path='/home' element={<IndexPage/>}/>
         </Routes>
       </BrowserRouter>

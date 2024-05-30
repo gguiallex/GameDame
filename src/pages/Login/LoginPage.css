@@ -25,9 +25,11 @@ input{
     border-radius: 5px;
     border: none;
     opacity: 0px;
-    rotate: -180;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.268);;
     padding-inline: 13px;
+    font-size: 24px; /* Adicionado para alinhar com o placeholder */
+    font-weight: 300; /* Adicionado para alinhar com o placeholder */
+    line-height: 29.26px; /* Adicionado para alinhar com o placeholder */
 }
 
 input::placeholder{
