@@ -29,7 +29,7 @@ const LoginPage = () => {
   } */
     
   return (
-    <div className='container'>
+    <div className='containerr'>
         <form className='form' onSubmit={handleSubmit}>
 
           <div className='login'>

@@ -1,8 +1,5 @@
 body{
     background-color: #FBF8F4;
-    
-    width: 1440px;
-    height: 1024px;
     overflow-x: hidden;
 }
 
@@ -25,7 +22,7 @@ input{
     border-radius: 5px;
     border: none;
     opacity: 0px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.268);;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.268);
     padding-inline: 13px;
     font-size: 24px; /* Adicionado para alinhar com o placeholder */
     font-weight: 300; /* Adicionado para alinhar com o placeholder */
@@ -39,7 +36,7 @@ input::placeholder{
     color: #97A4A2;
 }
 
-.container{
+.containerr{
     background: #FBF8F4;
     width: 550px;
     height: 1024px;

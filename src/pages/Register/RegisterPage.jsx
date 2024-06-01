@@ -5,15 +5,29 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 
 const RegisterPage = () => {
 
+  const [loading, setLoading] = useState();
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [CPF, setCPF] = useState("");
   const [password, setPassword] = useState("");
   const [repetPassword, setRepetPassword] = useState("");
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    try {
+      setLoading(true)
+      alert('funcionando')
+      setLoading(false)
+    } catch (err) {
+      alert('algo deu errado: ' + err)
+    }
+    
+  }
+
   return (
     <div className='container'>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className='Registro'>
           <h1 className='titulo'>Registrar</h1>
           <div className='inputs'>

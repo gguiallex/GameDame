@@ -6,6 +6,7 @@ import LoginPage from './pages/Login/LoginPage'
 import RegisterPage from './pages/Register/RegisterPage'
 import IndexPage from './pages/Index/IndexPage'
 import RecuperarSenhaPage from './pages/RecuperarSenha/RecuperarSenhaPage'
+import PerfilPage from './pages/Perfil/PerfilPage'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/register' element={<RegisterPage/>}/>
           <Route path='/forgot-Password' element={<RecuperarSenhaPage/>}/>
           <Route path='/home' element={<IndexPage/>}/>
+          <Route path='/perfil' element={<PerfilPage/>}/>
         </Routes>
       </BrowserRouter>
 

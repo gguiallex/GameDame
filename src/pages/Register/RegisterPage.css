@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-}
-
 .image{
     background-image: url(../../imgs/imagemPrincipal.png);
     background-size: cover;
@@ -13,7 +9,7 @@ body{
     z-index: 0;
 }
 
-.container{
+.containerr{
     margin: 0;
     width: 550px;
     height: 1024px;
