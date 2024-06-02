@@ -11,6 +11,7 @@
     opacity: 0px;
     background-color: #FBF6F0;
     align-items: center;
+    justify-content: space-around;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.268);
 }
 
@@ -34,7 +35,7 @@
 .buttonsTop{
     display: flex;
     align-items: center; 
-    justify-content: flex-start;
+    justify-content: space-around;
     height: 40px;
     width: 90vw;
 }
@@ -44,35 +45,27 @@
     font-size: 32px;
     font-weight: 300;
     line-height: 39.01px;
-    text-align: center;
+    text-align: right;
 }
 
 .lançamentos{
     width: 249px;
     height: 39px;
-    top: 31px;
-    left: 171px;
     gap: 0px;
     opacity: 0px;
-    margin-left: 31px;
 }
 
 .populares{
     width: 190px;
     height: 39px;
-    top: 33px;
-    left: 451px;
     gap: 0px;
     opacity: 0px;
-
     border-left: 1px solid #4B626C;
 }
 
 .generos{
     width: 163px;
     height: 39px;
-    top: 33px;
-    left: 672px;
     gap: 0px;
     opacity: 0px;
 
@@ -82,8 +75,6 @@
 .promoçoes{
     width: 211px;
     height: 39px;
-    top: 33px;
-    left: 866px;
     gap: 0px;
     opacity: 0px;
 
@@ -93,8 +84,6 @@
 .conta{
     width: 126px;
     height: 39px;
-    top: 33px;
-    left: 1108px;
     gap: 0px;
     opacity: 0px;
     border-left: 1px solid #4B626C;
@@ -104,13 +93,12 @@
     position: relative;
     width: 165px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .pesq{
     width: 165px;
     height: 40px;
-    top: 30px;
-    left: 1234px;
     gap: 0px;
     border-radius: 15px;
     opacity: 0px;
@@ -136,26 +124,104 @@
     color: #000000;
 }
 
+.PassarProLado{
+    display: flex;
+    background: none;
+    cursor: pointer;
+    border: none;
+    width: 51px;
+    height: 88.49px;
+    color:#4B626C;
+}
+
+.PassarProLado path{
+    height: 100%;
+    width: 100%;
+}
+
+.PassarProLado svg{
+    height: 100%;
+    width: 200%;
+}
+
 .procurar svg {
     width: 200%; /* Faz o ícone ocupar toda a largura do botão */
     height: 200%; /* Faz o ícone ocupar toda a altura do botão */
 }
 
-.carousel{
+.Carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 1323.39px;
     height: 480px;
-    top: 175px;
-    left: 59px;
+    margin: 0 auto;
+    margin-top: 74px;
     gap: 0px;
     opacity: 0px;
+    margin-bottom: 54px;
+    position: relative;
+}
+
+.jogosLaterais{
+    width: 406px;
+    height: 480px;
+}
+
+.DaysGone{
+    background-image: url(../../imgs/DaysGone.png);
+    width: 406px;
+    height: 240px;
+    padding: 1px;
+    gap: 0px;
+    border: 1px solid #FBF6F0;
+    opacity: 0px;
+    position: relative
+}
+
+.Horizon{
+    background-image: url(../../imgs/Horizon.png);
+    width: 406px;
+    height: 240px;
+    gap: 0px;
+    border: 1px solid #FBF6F0;
+    opacity: 0px;
+    position: relative
+}
+
+.GodOfWar{
+    background-image: url(../../imgs/godOfWar.png);
+    width: 814px;
+    height: 479px;
+    gap: 0px;
+    opacity: 0px;
+    position: relative
+}
+
+.Paginas{
+    width: 119px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: flex-end;
+    bottom: 10px;
+    justify-content:space-between;
+}
+
+.Pagina{
+    border-radius: 50%;
+    background: #a49797;
+    width: 20px;
+    height: 20px;
 }
 
 .backgroud-bottom{
+    display: flex;
     width: 100vw;
-    height: 100vw;
-    margin-top: 709px;
+    height: 50%;
     gap: 0px;
     opacity: 0px;
-
     background-color: #4B626C;
 }
