@@ -177,7 +177,8 @@
     gap: 0px;
     border: 1px solid #FBF6F0;
     opacity: 0px;
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 
 .Horizon{
@@ -187,7 +188,8 @@
     gap: 0px;
     border: 1px solid #FBF6F0;
     opacity: 0px;
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 
 .GodOfWar{
@@ -196,7 +198,8 @@
     height: 479px;
     gap: 0px;
     opacity: 0px;
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 
 .Paginas{
@@ -219,9 +222,88 @@
 
 .backgroud-bottom{
     display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 50%;
+    height: 46%;
     gap: 0px;
     opacity: 0px;
     background-color: #4B626C;
+
+}
+
+.lançamentosTitulo{
+    left: 100px;
+    width: 218px;
+    height: 39px;
+    color: #FBF8F3;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.01px;
+    position: relative;
+    
+}
+
+.GradeJogosNovos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 0 20px;
+}
+
+.NovoJogo1, .NovoJogo2, .NovoJogo3, .NovoJogo4, .NovoJogo5{
+    cursor: pointer;
+    width: 190px;
+    height: 250px;
+    position: relative;
+
+}
+
+.NovoJogo1, .NovoJogo5{
+    margin: 0 5px;
+}
+
+.NovoJogo1{
+    background-image: url(../../imgs/bobEsponja.png);
+}
+
+.NovoJogo2{
+    background-image: url(../../imgs/Deliver.png);
+}
+
+.NovoJogo3{
+    background-image: url(../../imgs/SpellForce.png);
+}
+
+.NovoJogo4{
+    background-image: url(../../imgs/DeathStranding.png);
+}
+
+.NovoJogo5{
+    background-image: url(../../imgs/pErtsh.png);
+    position: relative; /* Adiciona posição relativa */
+}
+
+.Carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    position: absolute; /* Altera para posição absoluta */
+    bottom: 10px; /* Distância do fundo */
+    right: 10px; /* Distância da direita */
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+.Carrinho svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    width:  41px;
 }

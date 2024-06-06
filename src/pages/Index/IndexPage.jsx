@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './IndexPage.css'
-import { HiOutlineMagnifyingGlass, HiChevronRight, HiChevronLeft } from "react-icons/hi2";
+import { HiOutlineMagnifyingGlass, HiChevronRight, HiChevronLeft, HiOutlineShoppingCart } from "react-icons/hi2";
 import PreçoEpromoção from '../../components/PreçoEpromoção';
 
 const IndexPage = () => {
@@ -50,8 +50,41 @@ const IndexPage = () => {
           <button className='PassarProLado'><HiChevronRight/></button>
         </div>
       <div className='backgroud-bottom'>
-
+        <br></br>
+        <p className='lançamentosTitulo'>Lançamentos</p>
+        <br></br>
+        <div className='GradeJogosNovos' >
+          <div className='NovoJogo1'>
+            <div className='PreçoNovosJogos'>
+              <PreçoEpromoção preço='$299,00'/>
+            </div>
+          </div>
+          <div className='NovoJogo2'>
+            <div className='PreçoNovosJogos'>
+              <PreçoEpromoção preço='$299,00'/>
+            </div>
+          </div>
+          <div className='NovoJogo3'>
+            <div className='PreçoNovosJogos'>
+              <PreçoEpromoção preço='$299,00'/>
+            </div>
+          </div>
+          <div className='NovoJogo4'>
+            <div className='PreçoNovosJogos'>
+              <PreçoEpromoção preço='$299,00'/>
+            </div>
+          </div>
+          <div className='NovoJogo5'>
+            <div className='PreçoNovosJogos'>
+              <PreçoEpromoção preço='$299,00'/>
+            </div>
+          </div>
+          <div className='Carrinho'>
+            <HiOutlineShoppingCart/>
+          </div>
       </div>
+        </div>
+
     </div>
   )
 }

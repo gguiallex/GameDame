@@ -61,3 +61,19 @@
     border-radius: 5px;
 }
 
+.PreçoNovosJogos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 25px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    margin-left: -81px;
+}
+
