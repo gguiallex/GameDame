@@ -1,0 +1,145 @@
+.corpo{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.LadoEsquerdo{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConteudoEsquerdo{
+    width: 670px;
+    height: 468px;
+}
+
+.boasVindas{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58.51px;
+    text-align: left;
+    color: #4B626C;
+}
+
+.info{
+    color:#4B626C;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39.01px;
+    text-align: left;
+}
+
+.botoesPerfil {
+    width: 270px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4B626C;
+    color: #FBF6F0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.57px;
+    text-align: left;
+    padding: 0 10px; /* Ajuste o padding conforme necessário */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre o texto e o ícone */
+    align-items: center; /* Alinha verticalmente o texto e o ícone */
+}
+
+.botoesPerfil span {
+    flex-grow: 1; /* Faz o texto ocupar todo o espaço restante */
+    width: 204px;
+    height: 37px;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.57px;
+    text-align: left;
+}
+
+.botoesPerfil svg {
+    margin-left: 10px; /* Adiciona um espaço entre o texto e o ícone */
+}
+
+.botoesPerfil:disabled{
+    opacity: 50%;
+}
+
+.LadoDireito{
+    background-color: #4B626C;
+    display: flex;
+    width: 603px;
+    height: 102vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConteudoDireito{
+    width: 475px;
+    height: 719px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TituloJogosAd{
+    height: 39px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39.01px;
+    text-align: left;
+    color: #FBF6F0;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.jogosAd{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Jogo1, .Jogo2, .Jogo3, .Jogo4{
+    width: 190px;
+    height: 250px;
+    color: #FBF6F0;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    bottom: -100;
+}
+
+.Jogo1{
+    background-image: url(../../imgs/bobEsponja.png);
+    margin-bottom: 40px;
+}
+
+.Jogo2{
+    background-image: url(../../imgs/Deliver.png);
+    margin-bottom: 40px;
+}
+
+.Jogo3{
+    background-image: url(../../imgs/godOfWar2.png);
+}
+
+.Jogo4{
+    background-image: url(../../imgs/DeathStranding.png);
+}
+
+.avaliação{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    color:#FBF6F0;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -30px;
+}
