@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 import LoginPage from './pages/Login/LoginPage'
@@ -10,15 +10,20 @@ import PerfilPage from './pages/Perfil/PerfilPage'
 
 function App() {
 
+  //vetor de usuários registrados
+  const [contas, setContas] = useState([]);
+  //salvar o email da ultima pessoa logada
+  const [emailLogado, setEmailLogado] = useState("");
+
   return (
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<LoginPage/>}/>
-          <Route path='/register' element={<RegisterPage/>}/>
-          <Route path='/forgot-Password' element={<RecuperarSenhaPage/>}/>
-          <Route path='/home' element={<IndexPage/>}/>
-          <Route path='/perfil' element={<PerfilPage/>}/>
+          <Route path='/' element={<LoginPage contas={contas} emailLogado={emailLogado} setEmailLogado={setEmailLogado}/>}/>
+          <Route path='/register' element={<RegisterPage contas={contas} setContas={setContas}/>}/>
+          <Route path='/forgot-Password' element={<RecuperarSenhaPage contas={contas}/>}/>
+          <Route path='/home' element={<IndexPage contas={contas} emailLogado={emailLogado}/>}/>
+          <Route path='/perfil' element={<PerfilPage contas={contas} emailLogado={emailLogado}/>}/>
         </Routes>
       </BrowserRouter>
 
