@@ -32,8 +32,8 @@ const RegisterPage = ({contas, setContas}) => {
       return;
     }
 
-    //para preencher corretamente o campo de CPF
-    if(CPF.length !== 14){
+    //para preencher corretamente o campo de CPF. Ignora os pontos e os traços para fazer a verificação.
+    if(CPF.replace(/\D/g, '').length !== 11){
       alert('Preencha corretamente o seu CPF.');
       return;
     }
